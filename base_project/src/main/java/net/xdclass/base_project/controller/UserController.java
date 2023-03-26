@@ -72,9 +72,9 @@ public class UserController {
 	}
 	
 	@GetMapping("update")
-	public Object update(String name21,int id){
+	public Object update(String name212,int id){
 		User user = new User();
-		user.setName(name21);
+		user.setName(name212);
 		user.setId(id);
 		userMapper.update(user);
 	    return JsonData.buildSuccess();
